@@ -1,17 +1,1 @@
-proxies:
-  - name: 123
-    type: http
-    server: 119.96.246.52
-    port: 16789
-    username: 96598
-    password: 96676
-proxy-groups:
-  - name: Proxy
-    type: select
-    proxies:
-      - 123
-      - DIRECT
-    _index: 0
-rules:
-  - DOMAIN-SUFFIX,example.com,Proxy
-  - MATCH,DIRECT
+
